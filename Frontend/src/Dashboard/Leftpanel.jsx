@@ -9,6 +9,7 @@ function Leftpanel() {
         <Link to="/dashboard"> <li className="text-xl hover:bg-blue-600 hover:rounded-2xl w-50 m-5 text-white pl-10 p-3 ">Dashboard</li></Link>
         <Link to="/addproduct"> <li className="text-xl hover:bg-blue-600 hover:rounded-2xl w-50 m-5 text-white pl-10 p-3 ">Addproduct</li></Link>
         <Link to="/viewproduct"> <li className="text-xl hover:bg-blue-600 hover:rounded-2xl w-50 m-5 text-white pl-10 p-3 ">View product</li></Link>
+        <Link to="/viewmessages"><li className="text-xl hover:bg-blue-600 hover:rounded-2xl w-50 m-5 text-white pl-10 p-3 ">ViewMessages</li></Link>
       </ul>
       
     </div>

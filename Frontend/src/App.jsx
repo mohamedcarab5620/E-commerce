@@ -5,7 +5,9 @@ import Cart from "./pages/Cart"
 import Dashboard from "./Dashboard/Dashboard"
 import Addproduct from "./Dashboard/Addproduct"
 import Viewproduct from "./Dashboard/Viewproduct"
+import ViewMessages from "./Dashboard/ViewMessages"
 import Update from "./Dashboard/Update"
+import Contact from "./pages/Contact"
 import { Routes, Route } from "react-router-dom"
 
 
@@ -17,10 +19,12 @@ function App() {
       <Routes>
         <Route Path="/"            element = {<Home        />} />
         <Route path="/product"     element = {<Product     />} />
+        <Route path="/contact"     element = {<Contact     />} />
         <Route path="/cart"        element = {<Cart        />} />
         <Route path="/dashboard"   element = {<Dashboard   />} />
         <Route path="/addproduct"  element = {<Addproduct  />} />
         <Route path="/viewproduct" element = {<Viewproduct />} />
+        <Route path="/viewmessages"element = {<ViewMessages/>} />
         <Route path="/update/:id"  element = {<Update      />} />
       </Routes>
 
