@@ -22,7 +22,7 @@ function Login() {
     e.preventDefault()
     try {
       const res = await axios.post("http://localhost:7000/admin/login", admin)
-      if (!res.data) {
+      if (res.data) {
         setErr("email & password are incorrect")
         alert("go to dashbaord")
         navigate("/dashboard")
