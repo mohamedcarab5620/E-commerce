@@ -7,6 +7,7 @@ import Addproduct from "./Dashboard/Addproduct"
 import Viewproduct from "./Dashboard/Viewproduct"
 import ViewMessages from "./Dashboard/ViewMessages"
 import Update from "./Dashboard/Update"
+import Login from "./Dashboard/Login"
 import Contact from "./pages/Contact"
 import { Routes, Route } from "react-router-dom"
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/addproduct"  element = {<Addproduct  />} />
         <Route path="/viewproduct" element = {<Viewproduct />} />
         <Route path="/viewmessages"element = {<ViewMessages/>} />
+        <Route path="/login"       element = {<Login       />} />
         <Route path="/update/:id"  element = {<Update      />} />
       </Routes>
 

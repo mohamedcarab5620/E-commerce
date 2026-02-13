@@ -12,6 +12,9 @@ app.use("/allimages", express.static("image"))
 const contaRouter = require("./Router/ContactRouter")
 app.use("/contact", contaRouter)
 
+const adminRouter = require("./Router/adminRouter")
+app.use("/admin", adminRouter)
+
 mongoose.connect("mongodb://localhost:27017/last123").then(() =>{
   console.log("connected")
 }).catch((err) =>{
