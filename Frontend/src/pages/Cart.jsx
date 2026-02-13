@@ -30,13 +30,11 @@ function Cart() {
           cartValue.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-between gap-6 border rounded-xl p-4 mb-4 hover:shadow-md transition"
-            >
+              className="flex items-center justify-between gap-6 border rounded-xl p-4 mb-4 hover:shadow-md transition">
               <img
                 src={`http://localhost:7000/allimages/${item.image}`}
                 alt=""
-                className="w-24 h-24 object-cover rounded-xl "
-              />
+                className="w-24 h-24 object-cover rounded-xl "/>
 
               <div className="flex-1">
                 <h2 className="text-lg font-semibold text-gray-700">
@@ -49,8 +47,7 @@ function Cart() {
 
               <button
                 onClick={() => HandleRemoveCart(index)}
-                className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-xl transition"
-              >
+                className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-xl transition">
                 Remove
               </button>
             </div>

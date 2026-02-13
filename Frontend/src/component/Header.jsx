@@ -12,10 +12,15 @@ function Header(){
           <Link to="/"> <li>Home</li> </Link>
           <Link to="/product"> <li>Product</li> </Link>
           <Link to="/contact"><li>Contact</li></Link>
-          <Link to="/login"><li>Dashboard</li></Link>
-          <Link to="/cart"><FaCartArrowDown /><li className="absolute top-0 right-7">{cartValue.length}</li></Link>
         </ul>
       </div>
+          <div>
+            <ul className="flex gap-10">
+          <Link to="/signup"><li>Signup</li></Link>  
+          <Link to="/adminlogin"><li>Dashboard</li></Link>
+          <Link to="/cart"><FaCartArrowDown /><li className="absolute top-0 right-7">{cartValue.length}</li></Link>
+            </ul>
+          </div>
     </div>
   )
 }

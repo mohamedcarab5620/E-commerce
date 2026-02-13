@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function Login() {
+function Adminlogin() {
   const navigate = useNavigate()
   const [admin, setAdmin] = useState({
     email: "",
@@ -48,4 +48,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Adminlogin
